@@ -48,6 +48,7 @@ vertical_alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=2078760652]
 layout_mode = 2
+theme_override_constants/separation = 10
 
 [node name="Label" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=955802948]
 layout_mode = 2
@@ -57,16 +58,18 @@ text = "Master Volume"
 
 [node name="MasterSlider" type="HSlider" parent="VBoxContainer/HBoxContainer" unique_id=1205466893]
 modulate = Color(0.8765969, 9.241105e-06, 0.5707027, 1)
-custom_minimum_size = Vector2(400, 0)
+custom_minimum_size = Vector2(400, 50)
 layout_mode = 2
 theme_override_constants/center_grabber = 0
 theme_override_constants/grabber_offset = 0
 theme_override_constants/tick_offset = 0
 max_value = 1.0
 step = 0.05
+value = 1.0
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" unique_id=152215833]
 layout_mode = 2
+theme_override_constants/separation = 10
 
 [node name="Label" type="Label" parent="VBoxContainer/HBoxContainer2" unique_id=1926893750]
 layout_mode = 2
@@ -76,16 +79,18 @@ text = "Music Volume"
 
 [node name="MusicSlider" type="HSlider" parent="VBoxContainer/HBoxContainer2" unique_id=912717569]
 modulate = Color(0.8765969, 9.241105e-06, 0.5707027, 1)
-custom_minimum_size = Vector2(400, 0)
+custom_minimum_size = Vector2(400, 50)
 layout_mode = 2
 theme_override_constants/center_grabber = 0
 theme_override_constants/grabber_offset = 0
 theme_override_constants/tick_offset = 0
 max_value = 1.0
 step = 0.05
+value = 1.0
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer" unique_id=1606503631]
 layout_mode = 2
+theme_override_constants/separation = 10
 
 [node name="Label" type="Label" parent="VBoxContainer/HBoxContainer3" unique_id=822002143]
 layout_mode = 2
@@ -96,20 +101,25 @@ text = "SFX Volume
 
 [node name="HSlider" type="HSlider" parent="VBoxContainer/HBoxContainer3" unique_id=1041817882]
 modulate = Color(0.8765969, 9.241105e-06, 0.5707027, 1)
-custom_minimum_size = Vector2(400, 0)
+custom_minimum_size = Vector2(400, 50)
 layout_mode = 2
 theme_override_constants/center_grabber = 0
 theme_override_constants/grabber_offset = 0
 theme_override_constants/tick_offset = 0
 max_value = 1.0
 step = 0.05
+value = 1.0
 allow_greater = true
 
 [node name="FullscreenCheckBox" type="CheckBox" parent="VBoxContainer" unique_id=76573532]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_mlw3h")
 theme_override_font_sizes/font_size = 32
+button_pressed = true
 text = "Fullscreen:"
+icon_alignment = 2
+vertical_icon_alignment = 2
+expand_icon = true
 
 [node name="BackButton" type="Button" parent="VBoxContainer" unique_id=1777557674]
 layout_mode = 2
