@@ -1,0 +1,17 @@
+# Godot 4+ specific ignores
+.godot/
+
+# Godot 3.x specific ignores
+.import/
+export.cfg
+export_presets.cfg
+
+# Mono/C# specific ignores
+.mono/
+obj/
+bin/
+.nuget/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
