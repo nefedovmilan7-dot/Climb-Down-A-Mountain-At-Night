@@ -348,8 +348,8 @@ animations = [{
 "speed": 8.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_l756w"]
-radius = 12.0415945
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n2icg"]
+size = Vector2(11, 18)
 
 [sub_resource type="Gradient" id="Gradient_r0mdn"]
 offsets = PackedFloat32Array(0, 0.9939759)
@@ -381,7 +381,8 @@ autoplay = "idle"
 frame_progress = 0.17067824
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1036832506]
-shape = SubResource("CircleShape2D_l756w")
+position = Vector2(-0.5, 2)
+shape = SubResource("RectangleShape2D_n2icg")
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1826960960]
 zoom = Vector2(4, 4)
