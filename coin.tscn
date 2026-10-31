@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://behhvkan5pyhf"]
+
+[ext_resource type="Script" uid="uid://vucolq8jnty0" path="res://coin.gd" id="1_0t63x"]
+[ext_resource type="Texture2D" uid="uid://cx77k7abgp7pm" path="res://coin.png" id="2_v7riw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pdq0q"]
+atlas = ExtResource("2_v7riw")
+region = Rect2(0, 0, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w14il"]
+atlas = ExtResource("2_v7riw")
+region = Rect2(10, 0, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h4etq"]
+atlas = ExtResource("2_v7riw")
+region = Rect2(20, 0, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o4fra"]
+atlas = ExtResource("2_v7riw")
+region = Rect2(30, 0, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_te2np"]
+atlas = ExtResource("2_v7riw")
+region = Rect2(40, 0, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m1j4n"]
+atlas = ExtResource("2_v7riw")
+region = Rect2(50, 0, 10, 10)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n2icg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pdq0q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w14il")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h4etq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o4fra")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_te2np")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m1j4n")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uukie"]
+radius = 5.0
+
+[node name="Coin" type="Area2D" unique_id=703463950]
+script = ExtResource("1_0t63x")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1954822725]
+sprite_frames = SubResource("SpriteFrames_n2icg")
+autoplay = "default"
+frame_progress = 0.29123574
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1420825229]
+shape = SubResource("CircleShape2D_uukie")
